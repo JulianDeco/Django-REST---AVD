@@ -1,0 +1,7 @@
+Include
+Lib
+Scripts
+.vscode
+pyenv.cfg
+db.sqlite3
+pyvenv.cfg
