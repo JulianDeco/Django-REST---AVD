@@ -1,10 +1,4 @@
 ### content of "create_user.py" file
-
-import os
-
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'apiExpo.settings')
-import django
-django.setup()
 from django.contrib.auth.models import User
 
 # see ref. below
