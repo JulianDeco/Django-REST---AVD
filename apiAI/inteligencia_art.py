@@ -28,5 +28,7 @@ def gpt3(stext):
     arreglo = content[0]
     response = arreglo.strip('\n\n')
     content[0] = response
+
+    respuesta = content[0]
     
-    return content[0]
+    return respuesta
