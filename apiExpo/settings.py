@@ -25,7 +25,11 @@ SECRET_KEY = 'django-insecure-49ci*1(vj(u_1$p-%y%4ak^+o1(4mkw8^kno!^d%&0nx(h=t$+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['apiexpo.onrender.com']
+
+RENDER_EXTERNAL_HOSTNAME = os.environ.get('RENDER_EXTERNAL_HOSTNAME')
+if RENDER_EXTERNAL_HOSTNAME:
+    ALLOWED_HOSTS.append(RENDER_EXTERNAL_HOSTNAME)
 
 
 # Application definition
