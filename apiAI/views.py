@@ -19,7 +19,6 @@ class QuerysViewSet(viewsets.ModelViewSet):
     """
     queryset = Querys.objects.all()
     serializer_class = ConsultaSerializer
-    permission_classes = [permissions.IsAuthenticated]
     
     def create(self, request):
     
