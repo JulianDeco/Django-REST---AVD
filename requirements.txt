@@ -45,3 +45,4 @@ Brotli==1.0.9
 django-rest-swagger==2.2.0
 pyyaml 
 uritemplate
+django-heroku == 0.3.1
