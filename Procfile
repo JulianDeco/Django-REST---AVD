@@ -1,0 +1,1 @@
+web: gunicorn apiExpo.wsgi --log-file -
