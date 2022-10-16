@@ -31,4 +31,4 @@ def gpt3(stext):
 
     respuesta = content[0]
     
-    return content[0]
+    return content
