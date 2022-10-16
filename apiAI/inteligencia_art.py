@@ -34,4 +34,3 @@ def gpt3(stext):
     
     return StrContent
 
-print(gpt3('¿Como hacer un asado?'))
