@@ -18,7 +18,7 @@ def gpt3(stext):
     engine="text-davinci-002",
     prompt=stext,
     temperature=0.6,
-    max_tokens=70,
+    max_tokens=120,
     top_p=1.0,
     frequency_penalty=0.0,
     presence_penalty=0.0,
@@ -31,4 +31,4 @@ def gpt3(stext):
 
     respuesta = content[0]
     
-    return content[0]
+    return content
