@@ -27,10 +27,10 @@ def gpt3(stext):
     content = response.choices[0].text.split('.')
     StrContent = ".".join(content)
     # arreglo = content[0]
-    # response = arreglo.strip('\n\n')
+    response = StrContent.strip('\n\n')
     # content[0] = response
 
-    respuesta = content[0]
     
-    return StrContent
+    return response
 
+print(gpt3('¿Como hacer un asado?'))
