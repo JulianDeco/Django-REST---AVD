@@ -25,10 +25,13 @@ def gpt3(stext):
     )
     
     content = response.choices[0].text.split('.')
-    arreglo = content[0]
-    response = arreglo.strip('\n\n')
-    content[0] = response
+    StrContent = ".".join(content)
+    # arreglo = content[0]
+    # response = arreglo.strip('\n\n')
+    # content[0] = response
 
     respuesta = content[0]
     
-    return content
+    return StrContent
+
+print(gpt3('¿Como hacer un asado?'))
