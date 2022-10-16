@@ -13,7 +13,7 @@ SE PUEDE ENVIAR EN JSON TAMBIÉN
 # translator = Translator()
 
 def gpt3(stext):
-    openai.api_key= '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'
+    openai.api_key= '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'
     response = openai.Completion.create(
     engine="text-davinci-002",
     prompt=stext,
