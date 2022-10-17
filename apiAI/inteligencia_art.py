@@ -18,7 +18,7 @@ def gpt3(stext):
     engine="text-davinci-002",
     prompt=stext,
     temperature=0.6,
-    max_tokens=120,
+    max_tokens=220,
     top_p=1.0,
     frequency_penalty=0.0,
     presence_penalty=0.0,
@@ -32,3 +32,5 @@ def gpt3(stext):
 
     
     return response
+
+print(gpt3('Como es el final del mundo?'))
