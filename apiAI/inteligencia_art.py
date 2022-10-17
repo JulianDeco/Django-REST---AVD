@@ -1,16 +1,7 @@
 import openai
 import os
-from googletrans import Translator
 import json
 from datetime import datetime
-"""
-INTENTAR CON VOZ
-IF VOZ O TECLADO
-
-SE PUEDE ENVIAR EN JSON TAMBIÉN
-"""
-
-translator = Translator()
 
 def gpt3(stext):
     date = datetime.now()
@@ -31,16 +22,7 @@ def gpt3(stext):
     # arreglo = content[0]
     response = StrContent.strip('\n\n')
     # content[0] = response
-    A = translator.detect(response)
-    if A.lang == 'es':
-        print(A)
-    
-    
-    
-    date = datetime.now()
-    print(date)
 
+    
     return response
 
-
-print(gpt3('¿Que es un cometa?'))
