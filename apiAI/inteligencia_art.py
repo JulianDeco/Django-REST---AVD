@@ -4,11 +4,9 @@ import json
 from datetime import datetime
 
 def gpt3(stext):
-    date = datetime.now()
-    print(date)
     openai.api_key= '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'
     response = openai.Completion.create(
-    engine="text-davinci-002",
+    engine="text-curie-001",
     prompt=stext,
     temperature=0.8,
     max_tokens=220,
@@ -25,4 +23,5 @@ def gpt3(stext):
 
     
     return response
+
 
