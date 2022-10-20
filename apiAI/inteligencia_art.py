@@ -4,6 +4,8 @@ import json
 from datetime import datetime
 
 def gpt3(stext):
+    date = datetime.now()
+    print(date)
     openai.api_key= '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'
     response = openai.Completion.create(
     engine="text-curie-001",
@@ -20,8 +22,11 @@ def gpt3(stext):
     # arreglo = content[0]
     response = StrContent.strip('\n\n')
     # content[0] = response
-
+    date = datetime.now()
+    print(date)
     
     return response
 
+
+print(gpt3('Fiambalá Argentina'))
 
